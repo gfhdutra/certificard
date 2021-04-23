@@ -1,57 +1,30 @@
 body {
-  background-color: #3d405b;
+  background-color: #4e4e60;
   font-family: 'Raleway', sans-serif;
-  padding: 10px;
+  padding: 1rem;
 }
 
 section {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
   max-width: 500px;
-  background-color: #F4F1DE;
-  margin-top: 120px;
-  margin-bottom: 10px;
-  padding: 15px;
+  background-color: #8baad8;
+  margin-top: 6.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
   border: 0px solid black;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3); 
   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 }
 
 header {
-  background-color: #e07a5f;
+  background-image: url("https://miro.medium.com/max/3200/1*L_QoAG863l8QvqxpNyBiqw.gif");
   background-size: cover;
-  height: 80px;
-  border-radius: 10px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  padding: 5px;
-  margin-left: 15px;
-}
-
-section h1 {
-  font-size: 23px;
-  text-align: center;
-}
-
-section p {
-  font-style: italic;
-  text-align: center;
-  margin-top: -18px;
-}
-
-section h2 {
-  font-size: 22px;
-  text-align: center;
-  margin-top: 0px;
+  height: 155px;
+  background-position: top;
+  border-radius: 0.5rem;
 }
 
 .avatar {
@@ -62,26 +35,50 @@ section h2 {
   margin-right: auto;
   display: block;
   transform: translateY(-55%);
-  border: 10px solid #F4F1DE;
+  border: 10px solid #8baad8;
 }
 
-span {
-    margin-bottom: 8px;
-    margin-top: -15px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+section h1 {
+  color: #29293f;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.links {
+  /* margin-bottom: 0.5rem; */
+  margin-top: -1.1rem;
+  display: block;
+  transform: translate(380px, -19px);
 }
 
 div {
-  padding: 15px;
+  padding: 1rem;
   border: 0px solid black;
-  background-color: #C0D8CB;
-  border-radius: 15px;
+  background-color: #f8da59;
+  border-radius: 1rem;
+}
+
+section h2 {
+  font-size: 1.375rem;
+  text-align: center;
+  margin-top: 0rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.3rem;
+  margin-left: 1rem;
 }
 
 a {
   color: black;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625rem;
 }
