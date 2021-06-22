@@ -1,5 +1,7 @@
 # Certificard - Portfólio
 
-### Aqui você irá encontrar links para meus projetos de desenvolvimento web
+#### Aqui você irá encontrar links para meus projetos de desenvolvimento web
 
-Este certificard foi construído somente com HTML e CSS na plataforma Codepen durante a Imersão Dev da Alura.
+Este certificard foi desenvolvido como projeto final da Imersão Dev, promovida pela Alura.
+
+Disponível em: [gfhdutra.github.io](https://gfhdutra.github.io/)
