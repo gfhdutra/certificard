@@ -3,52 +3,400 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Gabriel Dutra</title>
-  <script src="https://kit.fontawesome.com/c6c796244d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <section class="content">
-    <header>
-      <img class='avatar' src='assets/avatar.jpg' alt="foto do Gabriel"/>
-    </header>
 
-    <div class="main-info">
-      <h1>Gabriel Dutra</h1>
-      <p>&lt; front-end dev &gt;</p>
-      <span class='social-links'>
-        <a href="https://github.com/gfhdutra" target="_blank">
-          <i1 class="fab fa-github-square">
-        </a>
-        <a href="https://br.linkedin.com/in/gfhdutra" target="_blank">
-          <i2 class="fab fa-linkedin">
-        </a>
-      </span>
+  <!--==================== HEADER NAV ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Gabriel</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i> Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i> Portfólio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i> Sobre
+            </a>
+          </li>
+          <div class="nav__item--bottom">
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Habilidades
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contato
+              </a>
+            </li>
+          </div>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/gfhdutra/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://github.com/gfhdutra" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+          
+          <div class="home__img">
+            <img src="assets/img/home-img.png" alt="programmer">
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Olá, eu sou o Gabriel Dutra</h1>
+            <h2 class="home__subtitle">Desenvolvedor Front-End</h2>
+            <a href="#contact" class="button button--flex">
+              Contato <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__scroll">
+          <a href="#portfolio" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Ver mais</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+      <div class="portfolio--div">
+        <h2 class="section__title">Portfólio</h2>
+        <span class="section__subtitle">Trabalhos recentes</span>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">HC Dashboard</h3>
+                <p class="portfolio__description">O HC Dashboard é um sistema para gestão de cadastros. Projeto criado como estudo desenvolvido no programa Hiring Coders, promovido pela VTEX em parceria com a Gama Academy.</p>
+                <a href="https://hc-dashboard.vercel.app/"  target="_blank" class="button button--flex button--small portfolio__button">
+                  Visite o site
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">The Witcher - Card Game</h3>
+                <p class="portfolio__description">Jogo de cartas no estilo Super Trunfo com temática do universo The Witcher, desenvolvido somente a título de estudo. Baseado em um exercício realizado durante a Imersão Dev, promovida pela Alura.</p>
+                <a href="https://witcher-card-game.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                  Visite o site
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO3 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Economi-Z</h3>
+                <p class="portfolio__description">O Economi-Z é uma calculadora de comparações criada com intuito de fomentar a educação financeira e o habito de se planejar. O projeto foi desenvolvido pelo SQUAD 6 durante o Hackathon oferecido pela FCamara em parceria com a Alura.</p>
+                <a href="https://economiz.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                  Visite o site
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="about--div">
+        <h2 class="section__title">Sobre mim</h2>
+        <span class="section__subtitle about__subtitle">Minha trajetória</span>
+
+        <div class="about__container container grid">
+          <img src="assets/img/perfil.jpg" alt="" class="about__img">
+
+          <div class="about__data">
+            <p class="about__description">Olá! Meu nome é Gabriel, sou fotógrafo e videomaker em transição de carreira
+              para a área de tecnologia. Meu foco de estudos é no desenvolvimento web, tendo uma base de conhecimento em
+              HTML, CSS, JavaScript e React.</p>
+
+            <div class="about__buttons">
+              <a download href="assets/pdf/CV-Gabriel_Dutra.pdf" class="button button--flex">
+                Baixar CV<i class="uil uil-file-download button__icon"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <div class="skills--div">
+        <h2 class="section__title">Habilidades</h2>
+        <span class="section__subtitle">Conhecimento técnico</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS 1 ====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Front-End</h1>
+                  <span class="skills__subtitle">1 ano</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid first__list">
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!--==================== SKILLS 2 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-swatchbook skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Design</h1>
+                  <span class="skills__subtitle">Mais de 7 anos</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Photoshop</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__photoshop"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Lightroom</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__lightroom"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Illustrator</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__illustrator"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Figma</h3>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__figma"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <div class="contact--div">
+        <h2 class="section__title">Contato</h2>
+        <span class="section__subtitle">Vamos conversar</span>
+
+        <div class="contact__container container grid">
+          <div>
+
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Telefone</h3>
+                <a href="https://wa.me/5548996230647" target="_blank">
+                  <span class="contact__subtitle">(48) 99623-0647</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">E-mail</h3>
+                <a href="mailto:gfhdutra@gmail.com" target="_blank">
+                  <span class="contact__subtitle">gfhdutra@gmail.com</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Local</h3>
+                <a href="https://www.google.com/maps/place/Florian%C3%B3polis" target="_blank">
+                  <span class="contact__subtitle">Florianópolis - SC</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer--div">
+        <div class="footer__container container grid footer--subdiv">
+          <div>
+            <h1 class="footer__title">Gabriel Dutra</h1>
+            <span class="footer__subtitle">Desenvolvedor Front-End</span>
+          </div>
+  
+          <ul class="footer__links">
+            <li>
+              <a href="#portfolio" class="footer__link">Portfólio</a>
+            </li>
+            <li>
+              <a href="#skills" class="footer__link">Habilidades</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contato</a>
+            </li>
+          </ul>
+  
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/gfhdutra/" target="_blank" class="footer__social">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://github.com/gfhdutra" target="_blank" class="footer__social">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">Desenvolvido por Gabriel Dutra &#169;</p>
+      </div>
     </div>
+  </footer>
 
-    <div class="projects">
-      <h2>Desenvolvimento Web</h2>
-      <ul>
-        <li>🔢<a href='https://codepen.io/gfhdutra/full/MWJEOOq' target='_blank'>Cálculo de Taxa Metabólica</li></a>
-        <li>🚗<a href='https://codepen.io/gfhdutra/full/bGgVVJz' target='_blank'>Desafio Carros</li></a>
-        <li>🔮<a href='https://codepen.io/gfhdutra/full/qBRbooO' target='_blank'>Mentalista</li></a>
-        <li>🌭<a href='https://codepen.io/gfhdutra/full/ZELOONV' target='_blank'>Ultimate JoKenPo</li></a>
-        <li>🎬<a href='https://codepen.io/gfhdutra/full/GRrqBPq' target='_blank'>VegFlix</li></a>
-        <li>🏆<a href='https://codepen.io/gfhdutra/full/poREWQg' target='_blank'>Tabela de Classificação</li></a>
-        <li>🃏<a href='https://codepen.io/gfhdutra/full/PoWmYWW' target='_blank'>The Witcher - Card Game</li></a>
-        <li>🌐<a href='https://codepen.io/gfhdutra/full/abpWoqe' target='_blank'>Certificard</li></a>
-      </ul>
-    </div>
-
-  </section>
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+  <!--==================== JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
